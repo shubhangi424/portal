@@ -1,7 +1,6 @@
 package com.java.demo;
 
 import java.util.List;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,6 +43,9 @@ public class UserService  {
 		
 		return ur.findByusername(username);
 	}
+	
+	
+
 	
 
 }

@@ -13,6 +13,10 @@ public class User {
 	private String username;	
 	private	String email;
 	private	String password;
+	private String mobileno;
+	private String otp;
+	private long expirytime;
+
 	    public User() {
 
 	    }
@@ -72,6 +76,32 @@ public class User {
 
 		public void setPassword(String password) {
 			this.password = password;
+		}
+
+		public String getMobileno() {
+			return mobileno;
+		}
+
+		public void setMobileno(String mobileno) {
+			this.mobileno = mobileno;
+		}
+
+		public String getOtp() {
+			return otp;
+		}
+
+		public void setOtp(String otp) {
+			this.otp = otp;
+		}
+
+		
+
+		public long getExpirytime() {
+			return expirytime;
+		}
+
+		public void setExpirytime(long expirytime) {
+			this.expirytime = expirytime;
 		}
 
 		@Override
