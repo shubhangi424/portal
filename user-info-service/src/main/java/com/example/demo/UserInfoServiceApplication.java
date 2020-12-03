@@ -15,9 +15,9 @@ import org.springframework.stereotype.Service;
 
 @Transactional
 @Service
-@ComponentScan(basePackages = {"com.example.demo"})
-@EnableJpaRepositories(basePackages = {"com.example.demo"})
-@EntityScan(basePackages = {"com.example.demo"})
+@ComponentScan
+@EnableJpaRepositories
+@EntityScan
 //@EntityScan(basePackages)={"com.example.demo"})
 
 public class UserInfoServiceApplication {

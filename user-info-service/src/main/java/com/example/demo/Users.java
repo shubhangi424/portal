@@ -14,7 +14,7 @@ import javax.persistence.TemporalType;
 import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
-@Table(name="U")
+@Table(name="User")
 public class Users {
 	
 	@Id
@@ -23,10 +23,10 @@ public class Users {
 	private String first_name;
 	private String last_name;
 	
-	//@Temporal(TemporalType.DATE)
+	@Temporal(TemporalType.DATE)
 
 	@CreationTimestamp
-	@Temporal(TemporalType.TIMESTAMP)
+	//@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "create_at")
 	private Date create_at;
 	
@@ -41,6 +41,31 @@ public class Users {
 	private String providerName;
 	private int role;
 	
+//constructor for test case	
+	public Users(int id, String first_name, String last_name, int country_code, String mobile_number,
+			String email, String password, String address, String gender, String profilepicture, String providerId,
+			String providerName, int role) {
+		super();
+		this.id = id;
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.create_at = create_at;
+		this.country_code = country_code;
+		this.mobile_number = mobile_number;
+		this.email = email;
+		this.password = password;
+		this.address = address;
+		this.gender = gender;
+		this.profilepicture = profilepicture;
+		this.providerId = providerId;
+		this.providerName = providerName;
+		this.role = role;
+	}
+public Users() {
+	
+		
+	}
+	//---------------------------------------------------------------------------------------------
 	public int getId() {
 		return id;
 	}
